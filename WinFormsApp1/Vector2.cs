@@ -1,4 +1,4 @@
-﻿
+//COPYRITE BY KICHIGIN SOUND STUDIOS©﻿
 
 namespace Vectors
 {
