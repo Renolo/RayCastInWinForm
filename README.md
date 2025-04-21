@@ -1,1 +1,2 @@
 Рейкаст в винформе C#
+COPYRITE BY KICHIGIN SOUN STUDIOS©
