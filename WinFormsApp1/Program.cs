@@ -6,16 +6,16 @@ class PixelForm : Form
 {
     Engine engine = new Engine();
 
-    // Исправлено: конструктор должен иметь то же имя, что и класс, и не иметь возвращаемого типа
+    
     public PixelForm()
     {
-        this.KeyPreview = true; // Форма будет получать события клавиатуры
-        this.KeyDown += PixelForm_KeyDown; // Подписываемся на событие
-        this.Size = new Size(1920, 1080); // Перенесено из OnPaint в конструктор
-        this.DoubleBuffered = true; // Добавлено для устранения мерцания
+        this.KeyPreview = true; 
+        this.KeyDown += PixelForm_KeyDown; 
+        this.Size = new Size(1920, 1080); 
+        this.DoubleBuffered = true; 
     }
 
-    // Обработка нажатия клавиш
+    // ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г­Г Г¦Г ГІГЁГї ГЄГ«Г ГўГЁГё
     private void PixelForm_KeyDown(object sender, KeyEventArgs e)
     {
         if (e.KeyCode == Keys.W)
@@ -31,7 +31,7 @@ class PixelForm : Form
             engine.SetPlayerAngle(-5.5f);
         }
 
-        this.Invalidate(); // Перерисовываем форму после изменения угла
+        this.Invalidate(); // ГЏГҐГ°ГҐГ°ГЁГ±Г®ГўГ»ГўГ ГҐГ¬ ГґГ®Г°Г¬Гі ГЇГ®Г±Г«ГҐ ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГї ГіГЈГ«Г 
     }
 
     protected override void OnPaint(PaintEventArgs e)
